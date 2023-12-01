@@ -71,7 +71,7 @@ public class SuperHeroServiceImpl implements SuperHeroService {
             return superHeroUpdate;
 
         } else {
-            throw new ResourceNotFoundException("No se encontro el superheroe");
+            throw new ResourceNotFoundException("No se encontro el superheroe con el id: /" + superHero.getId());
         }
     }
 
